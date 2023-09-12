@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #141414;
+.custom-skeleton {
+  background-color: #1a1a1a !important; /* Add !important to increase specificity */
 }

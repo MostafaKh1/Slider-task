@@ -22,7 +22,7 @@ function SliderList() {
 
   return (
     <div>
-      <div className="flex ">
+      <div className="flex   md:flex-row justify-center items-center ">
         <div className="bg-mainColor m-10 w-[75%] h-[40rem] -translate-x-[20%] -skew-x-[30deg] flex  gap-x-4">
           {data.map(({ id, imgUrl }) => {
             return (
