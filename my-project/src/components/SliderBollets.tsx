@@ -16,6 +16,7 @@ function SliderBullets({
   const currentBullet = id - 1 === currentImageIndex;
   return (
     <button
+      onClick={() => setCurrentImageIndex(id - 1)}
       className={`w-4 h-4 border     rounded-full ${
         currentBullet
           ? " bg-green-300 w-[13px] h-[13px] border-green-300"

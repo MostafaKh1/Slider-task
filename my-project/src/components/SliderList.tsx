@@ -22,7 +22,7 @@ function SliderList() {
 
   return (
     <div>
-      <div className="flex   md:flex-row justify-center items-center ">
+      <div className="flex  flex-col  md:flex-row justify-center items-center ">
         <div className="bg-mainColor m-10 w-[75%] h-[40rem] -translate-x-[20%] -skew-x-[30deg] flex  gap-x-4">
           {data.map(({ id, imgUrl }) => {
             return (
@@ -38,7 +38,7 @@ function SliderList() {
 
           <h3 className="text-xl w-[10rem]  text-green-400 ">SEE ALL</h3>
         </div>
-        <div className="flex flex-col gap-y-4 text-center items-center justify-center -translate-x-[50%] relative ">
+        <div className="flex  text-center items-center justify-center -translate-x-[50%] relative ">
           <div className="flex gap-x-4">
             <span className="text-blue-700">
               <svg
@@ -97,7 +97,7 @@ function SliderList() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center max-w-[1000px]  gap-x-3">
+      <div className="  lg:flex items-center justify-center max-w-[1000px]  gap-x-3">
         {data.map(({ id, imgUrl }) => {
           return (
             <SliderBullets

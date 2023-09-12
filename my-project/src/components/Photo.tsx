@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction, useState, useEffect } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css"; // Import the CSS
+import "react-loading-skeleton/dist/skeleton.css";
 
 interface PhotoProps {
   id: number;
@@ -16,7 +16,7 @@ function Photo({
   setCurrentImageIndex,
 }: PhotoProps) {
   const isFullWidth = id - 1 === currentImageIndex;
-  const width = isFullWidth ? { width: "60%" } : { width: "8rem" };
+  const width = isFullWidth ? { width: "60%" } : { width: "10rem" };
 
   const [isLoading, setIsLoading] = useState(true);
 
